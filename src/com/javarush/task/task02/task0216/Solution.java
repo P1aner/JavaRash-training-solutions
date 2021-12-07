@@ -8,17 +8,16 @@ public class Solution {
     public static int min(int a, int b, int c) {
         //напишите тут ваш код
         int min;
-        if (a<b)
-            if (a<c)
+        if (a < b)
+            if (a < c)
                 min = a;
             else
                 min = c;
+        else if (b < c)
+            min = b;
         else
-            if (b<c)
-                min = b;
-            else
-                min = c;
-    return min;
+            min = c;
+        return min;
     }
 
     public static void main(String[] args) {
