@@ -13,7 +13,7 @@ public class Solution {
 
     public static void div(int a, int b) {
 
-        System.out.println(a * 1.0 / b);//напишите тут ваш код
+        System.out.println(a / b);//напишите тут ваш код
 
     }
 }
