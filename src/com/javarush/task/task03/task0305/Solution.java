@@ -10,7 +10,7 @@ import java.util.Calendar;
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
-        Calendar birthDay = new GregorianCalendar(1993, 6, 13);
+        Calendar birthDay = new GregorianCalendar(1993, Calendar.JULY, 13);
         System.out.println(birthDay.getTime());
         //    System.out.println("JUL 13 1993");
     }
