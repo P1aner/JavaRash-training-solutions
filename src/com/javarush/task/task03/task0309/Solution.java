@@ -10,11 +10,11 @@ public class Solution {
         getSum(5);
     }
 
-    public static void getSum(int S) {
-        int Sum = 0;
+    public static void getSum(int s) {
+        int sum = 0;
 
-        for (int i = 1; i <= S; i++) {
-            System.out.println(Sum = Sum + i);
+        for (int i = 1; i <= s; i++) {
+            System.out.println(sum = sum + i);
         }
     }
 

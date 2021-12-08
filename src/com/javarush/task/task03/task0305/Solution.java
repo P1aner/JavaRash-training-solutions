@@ -5,12 +5,13 @@ package com.javarush.task.task03.task0305;
 */
 
 import java.util.GregorianCalendar;
+import java.util.Calendar;
 
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
-        java.util.Calendar calendar = new GregorianCalendar(1993, 6, 13);
-        System.out.println(calendar.getTime());
+        Calendar birthDay = new GregorianCalendar(1993, 6, 13);
+        System.out.println(birthDay.getTime());
         //    System.out.println("JUL 13 1993");
     }
 }

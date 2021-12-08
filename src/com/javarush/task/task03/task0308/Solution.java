@@ -10,9 +10,9 @@ public class Solution {
         System.out.println(getFactorial(10));
     }
 
-    public static int getFactorial(int S) {
+    public static int getFactorial(int s) {
         int result = 1;
-        for (int i = 1; i <= S; i++) {
+        for (int i = 1; i <= s; i++) {
             result = result * i;
 
         }
