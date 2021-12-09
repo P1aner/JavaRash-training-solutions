@@ -7,8 +7,8 @@ package com.javarush.task.task03.task0313;
 public class Solution {
     public static void main(String[] args) {
         String a = "Мама";
-        String b = "мыла";
-        String c = "раму";
+        String b = "Мыла";
+        String c = "Раму";
         System.out.println(a + b + c);
         System.out.println(a + c + b);
         System.out.println(b + a + c);
