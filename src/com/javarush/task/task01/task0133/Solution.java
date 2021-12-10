@@ -17,21 +17,20 @@ public class Solution {
         System.out.println("Введите время в формате hh.mm:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String text = reader.readLine();
-        double time1 = Double.parseDouble(text);
+        double time1 = Double.parseDouble(text) * 100;
 
         System.out.println("Введите время 2 в формате hh.mm:");
         text = reader.readLine();
-        double time2 = Double.parseDouble(text);
-        int h1 = (int) time1;
-        int h2 = (int) time2;
-        double m1 = ((time1 - h1) * 100);
-        double m2 = ((time2 - h2) * 100);
-        int mm1 = (int) m1;
-        int mm2 = (int) m2;
+        double time2 = Double.parseDouble(text) * 100;
+        int m1 = (int) time1;
+        int m2 = (int) time2;
+        int h1 = m1 / 100;
+        int h2 = m2 / 100;
+        int mm1 = m1 % 100;
+        int mm2 = m2 % 100;
         mm1 = h1 * 60 + mm1;
         mm2 = h2 * 60 + mm2;
-        int mm = (mm2 - mm1)*60;
-
+        int mm = (mm2 - mm1) * 60;
 
         System.out.println(mm);
 
