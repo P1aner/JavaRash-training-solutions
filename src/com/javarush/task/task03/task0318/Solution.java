@@ -2,7 +2,7 @@ package com.javarush.task.task03.task0318;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Scanner;
+
 
 /*
 План по захвату мира
@@ -15,11 +15,12 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String name = reader.readLine();
         System.out.println("Количество лет:");
-        Scanner scanner = new Scanner(System.in);
-        int age = scanner.nextInt();
+
+        String age = reader.readLine();
 
 
-        System.out.println(name + " захватит мир через " + age + " лет. Му-ха-ха!");
+        // System.out.println(name + " захватит мир через " + age + " лет. Му-ха-ха!");
+        System.out.printf("%s захватит мир через %s лет. Му-ха-ха!", name, age);
     }
 }
 
