@@ -11,12 +11,21 @@ public class Solution {
 
     public static int sumDigitsInNumber(int number) {
         //напишите тут ваш код
-        int e = number % 10;
+        int sum = 0;
+        while (number > 0) {
+            sum = sum + number % 10;
+            number = number / 10;
+        }
+
+
+       /* int e = number % 10;
         int d = number % 100 / 10;
-        int s = number % 1000 / 100;
-        return e + d + s;
+        int s = number % 1000 / 100;   */
+        return /*e + d + s*/ sum;
+
     }
 }
+
 
 
 /*Напиши код метода sumDigitsInNumber(int number). Метод на вход принимает целое трехзначное число. Нужно посчитать сумму цифр этого числа, и вернуть эту сумму.
