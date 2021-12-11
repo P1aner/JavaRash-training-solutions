@@ -20,8 +20,8 @@ public class Solution {
     public static class Cat {
         public static int count = 0;
 
-        public Cat() {
-            Cat.count++;
+        Cat() {
+            count++;
         }
 
         ;
