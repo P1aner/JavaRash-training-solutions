@@ -16,24 +16,14 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int year = parseInt(reader.readLine());
         int dayInYear = 365;
-        if (year % 4 == 0) {
-            if (year % 100 == 0) {
-                if (year % 400 == 0) {
-                    dayInYear = 366;
-                } else {
-
-                }
-
-            } else {
-                dayInYear = 366;
-            }
-        } else {
-
-        }
+        if (year % 4 == 0) if (year % 100 == 0) {
+            if (year % 400 == 0) dayInYear = 366;
+        } else dayInYear = 366;
         System.out.println("Количество дней в году: " + dayInYear);
 
     }
 }
+
 
 
 /* Ввести с клавиатуры год, определить количество дней в году. Результат вывести на экран в следующем виде:

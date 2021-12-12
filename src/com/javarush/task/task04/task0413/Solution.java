@@ -15,10 +15,9 @@ public class Solution {
         System.out.println("Введите номер дня недели:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int day = parseInt(reader.readLine());
-        // dayOfMounth(day);
-        if (day < 1 || day > 7) {
-            System.out.println("Такого дня не существует");
-        } else {
+        // dayOfMonth(day);
+        if (day < 1 || day > 7) System.out.println("Такого дня не существует");
+        else {
             String[] days = {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
             System.out.println(days[day - 1]);
         }
@@ -27,7 +26,7 @@ public class Solution {
 
 
     //этот метод городил я
-   /* public static void dayOfMounth(int day) {
+   /* public static void dayOfMonth(int day) {
         if (day == 1) System.out.println("Понедельник");
         if (day == 2) System.out.println("Вторник");
         if (day == 3) System.out.println("Среда");
