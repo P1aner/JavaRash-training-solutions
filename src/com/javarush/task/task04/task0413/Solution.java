@@ -16,8 +16,9 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int day = parseInt(reader.readLine());
         // dayOfMonth(day);
-        if (day < 1 || day > 7) System.out.println("Такого дня не существует");
-        else {
+        if (day < 1 || day > 7) {
+            System.out.println("Такого дня не существует");
+        } else {
             String[] days = {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
             System.out.println(days[day - 1]);
         }

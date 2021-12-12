@@ -16,8 +16,11 @@ public class Solution {
         System.out.println("Введите число:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         double n1 = parseDouble(reader.readLine());
-        if (n1 < 0) {n1++;}
-        else if (n1 > 0) {n1 = n1 * 2;}
+        if (n1 < 0) {
+            n1++;
+        } else if (n1 > 0) {
+            n1 = n1 * 2;
+        }
         System.out.println(n1);
 
     }
