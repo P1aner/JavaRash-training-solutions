@@ -18,14 +18,9 @@ public class Solution {
         double n1 = parseDouble(reader.readLine());
         if (n1 < 0) {
             n1 = n1 + 1;
-        } else {
-            if (n1 > 0) {
-                n1 = n1 * 2;
-            } else {
-                if (n1 == 0) {
-                //не делать ничего
-                }
-            }
+        } else if (n1 > 0) {
+            n1 = n1 * 2;
+        } else if (n1 == 0) {
         }
         System.out.println(n1);
 

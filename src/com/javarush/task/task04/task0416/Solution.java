@@ -19,13 +19,13 @@ public class Solution {
         while (time >= 5) {
             time = time - 5;
         }
-        if ((time > 0 && time < 3) || time == 0) {
+        if (time >= 0 && time < 3) {
             System.out.println("Зеленый");
         }
-        if ((time > 3 && time < 4) || time == 3) {
+        if (time >= 3 && time < 4) {
             System.out.println("Жёлтый");
         }
-        if ((time > 4 && time < 5) || time == 4) {
+        if (time >= 4 && time < 5) {
             System.out.println("Красный");
         }
 

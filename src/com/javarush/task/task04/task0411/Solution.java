@@ -23,7 +23,7 @@ public class Solution {
         if (8 < month && month < 12) {
             System.out.println("Осень");
         }
-        if (0<month && month <3 || 12 == month){
+        if (0 < month && month < 3 || 12 == month) {
             System.out.println("Зима");
         }
 

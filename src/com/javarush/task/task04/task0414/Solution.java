@@ -15,20 +15,23 @@ public class Solution {
         System.out.println("Введите год:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int year = parseInt(reader.readLine());
+        int dayInYear = 365;
         if (year % 4 == 0) {
             if (year % 100 == 0) {
                 if (year % 400 == 0) {
-                    System.out.println("Количество дней в году: 366");
+                    dayInYear = 366;
                 } else {
-                    System.out.println("Количество дней в году: 365");
+
                 }
 
             } else {
-                System.out.println("Количество дней в году: 366");
+                dayInYear = 366;
             }
         } else {
-            System.out.println("Количество дней в году: 365");
+
         }
+        System.out.println("Количество дней в году: " + dayInYear);
+
     }
 }
 

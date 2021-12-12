@@ -12,13 +12,15 @@ public class Solution {
 
     public static void displayClosestToTen(int a, int b) {
         // напишите тут ваш код
+        int be;
         System.out.printf("Из чисел %s и %s ", a, b);
         if (abs(a - 10) >= abs(b - 10)) {
 
-            System.out.printf("число %s ближе к десяти\n" ,b);
+            be = b;
         } else {
-            System.out.printf("число %s ближе к десяти\n", a);
+            be = a;
         }
+        System.out.printf("число %s ближе к десяти\n", be);
 
 
     }

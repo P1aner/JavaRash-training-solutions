@@ -13,12 +13,14 @@ public class Solution {
 
     public static void checkInterval(int number) {
         //напишите тут ваш код
+        String insert = "";
         if (number > 50 && number < 100) {
-            System.out.printf("Число %s содержится в интервале.\n", number);
+
         } else {
-            System.out.printf("Число %s не содержится в интервале.\n", number);
+            insert = " не";
 
         }
+        System.out.printf("Число %d%s содержится в интервале.\n", number, insert);
 
     }
 }
