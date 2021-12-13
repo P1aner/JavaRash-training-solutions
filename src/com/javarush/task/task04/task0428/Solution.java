@@ -12,13 +12,11 @@ public class Solution {
         //напишите тут ваш код
         System.out.println("ВВедите три числа");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int n1 = Integer.parseInt(reader.readLine());
-        int n2 = Integer.parseInt(reader.readLine());
-        int n3 = Integer.parseInt(reader.readLine());
         int number = 0;
-        if (n1 > 0) number++;
-        if (n2 > 0) number++;
-        if (n3 > 0) number++;
+        for (int i = 0; i < 3; i++) {
+            if (Integer.parseInt(reader.readLine()) > 0) number++;
+        }
+
         System.out.println(number);
 
 

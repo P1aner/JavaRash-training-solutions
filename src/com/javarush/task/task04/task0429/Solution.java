@@ -12,24 +12,16 @@ public class Solution {
         //напишите тут ваш код
         System.out.println("ВВедите три числа");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int n1 = Integer.parseInt(reader.readLine());
-        int n2 = Integer.parseInt(reader.readLine());
-        int n3 = Integer.parseInt(reader.readLine());
         int number = 0;
         int mumber = 0;
-        if (n1 > 0) {
-            number++;
-        } else {
-            mumber++;
-        }
-        if (n2 > 0) {
-            number++;
-        } else {
-            mumber++;
-        }
-        if (n3 > 0) {
-            number++;
-        } else mumber++;
+        for (int i = 0; i < 3; i++)
+            if (Integer.parseInt(reader.readLine()) > 0) {
+                number++;
+            } else {
+                mumber++;
+            }
+
+
         System.out.println("количество отрицательных чисел " + mumber);
         System.out.println("количество положительных чисел " + number);
 

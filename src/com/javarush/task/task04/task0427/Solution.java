@@ -14,22 +14,29 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(reader.readLine());
         int k = (n + "").length();
-        String ctno = "нечетное";
-        String znak = "отрицательное";
-        String[] myArray = new String[]{"однозначное", "двузначное", "трехзначное", "четырехзначное", "пятизначное", "щестизначное", "семизначное", "восьмизначное", "девятизначное", "десятизначное", "одинадцатизначное"};
+        String parity = "";
+        String even = "Четное";
+        String odd = "Нечетное";
+        String[] myArray = new String[]{"однозначное", "двузначное", "трехзначное",
+                "четырехзначное", "пятизначное", "щестизначное",
+                "семизначное", "восьмизначное", "девятизначное",
+                "десятизначное", "одинадцатизначное"};
         if (n == 0) {
             System.out.println("ноль");
         } else {
             if (n % 2 == 0) {
-                ctno = "четное";
+                parity = even;
+            } else {
+                parity = odd;
             }
             if (n < 0) {
                 k = k - 1;
+
             }
 
 
         }
-        System.out.printf("%s %s число", ctno, myArray[k - 1]);
+        System.out.printf("%s %s число", parity, myArray[k - 1]);
     }
 
 }

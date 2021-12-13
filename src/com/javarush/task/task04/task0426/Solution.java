@@ -12,20 +12,20 @@ public class Solution {
         System.out.println("Введите целое число:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(reader.readLine());
-        String ctno = "нечетное";
-        String znak = "отрицательное";
+        String parity = "нечетное";
+        String sing = "отрицательное";
         if (n == 0) {
             System.out.println("ноль");
         } else {
             if (n % 2 == 0) {
-                ctno = "четное";
+                parity = "четное";
             }
             if (n > 0) {
-                znak = "положительное";
+                sing = "положительное";
 
 
             }
-            System.out.printf("%s %s число", znak, ctno);
+            System.out.printf("%s %s число", sing, parity);
 
 
             //напишите тут ваш код
