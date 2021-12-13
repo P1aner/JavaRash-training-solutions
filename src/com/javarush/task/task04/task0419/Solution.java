@@ -16,13 +16,8 @@ public class Solution {
         int number2 = Integer.parseInt(reader.readLine());
         int number3 = Integer.parseInt(reader.readLine());
         int number4 = Integer.parseInt(reader.readLine());
-        int max;
-        if (maxGet(number1, number2) >= maxGet(number3, number4)) {
-            max = maxGet(number1, number2);
-        } else {
-            max = maxGet(number3, number4);
-        }
-        System.out.println(max);
+
+        System.out.println(maxGet(maxGet(number1, number2), maxGet(number3, number4)));
 
 
     }

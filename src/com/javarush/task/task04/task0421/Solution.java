@@ -15,14 +15,12 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String name1 = reader.readLine();
         String name2 = reader.readLine();
-        int n1 = name1.length();
-        int n2 = name2.length();
         String vst = "";
 
         if (name1.equals(name2)) {
-            vst = name1;
-        } else if (n1 == n2) {
-            vst = Integer.toString(n1);
+            vst = "Имена идентичны";
+        } else if (name1.length() == name2.length()) {
+            vst = "Длины имен равны";
         }
 
 
