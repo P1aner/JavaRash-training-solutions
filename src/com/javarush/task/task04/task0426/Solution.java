@@ -12,20 +12,31 @@ public class Solution {
         System.out.println("Введите целое число:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(reader.readLine());
-        String parity = "нечетное";
-        String sing = "отрицательное";
+        String parity = "";
+        String even = "четное";
+        String odd = "нечетное";
+
+        String sign = "";
+        String plus = "Положительное";
+        String minus = "Отрицательное";
+
+
         if (n == 0) {
-            System.out.println("ноль");
+            System.out.println("Ноль");
         } else {
             if (n % 2 == 0) {
-                parity = "четное";
+                parity = even;
+            } else {
+                parity = odd;
             }
             if (n > 0) {
-                sing = "положительное";
+                sign = plus;
 
 
+            } else {
+                sign = minus;
             }
-            System.out.printf("%s %s число", sing, parity);
+            System.out.printf("%s %s число", sign, parity);
 
 
             //напишите тут ваш код
