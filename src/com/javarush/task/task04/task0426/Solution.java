@@ -12,11 +12,11 @@ public class Solution {
         System.out.println("Введите целое число:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(reader.readLine());
-        String parity = "";
+        String parity;
         String even = "четное";
         String odd = "нечетное";
 
-        String sign = "";
+        String sign;
         String plus = "Положительное";
         String minus = "Отрицательное";
 

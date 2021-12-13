@@ -12,18 +12,18 @@ public class Solution {
         //напишите тут ваш код
         System.out.println("ВВедите три числа");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int plus = 0;
-        int minus = 0;
+        int positive = 0;
+        int negative = 0;
         for (int i = 0; i < 3; i++)
             if (Integer.parseInt(reader.readLine()) > 0) {
-                plus++;
+                positive++;
             } else {
-                minus++;
+                negative++;
             }
 
 
-        System.out.println("количество отрицательных чисел " + minus);
-        System.out.println("количество положительных чисел " + plus);
+        System.out.println("количество отрицательных чисел " + negative);
+        System.out.println("количество положительных чисел " + positive);
 
 
     }
