@@ -7,10 +7,10 @@ package com.javarush.task.task04.task0431;
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
-        int i = 11;
-        while (i > 1) {
-            i--;
-            System.out.println(i);
+        int i = 10;
+        while (i > 0) {
+
+            System.out.println(i--);
         }
     }
 }

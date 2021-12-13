@@ -8,10 +8,10 @@ public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
 
-        int i = 0;
-        while (i < 10) {
-            i++;
-            System.out.println(i);
+        int i = 1;
+        while (i < 11) {
+
+            System.out.println(i++);
         }
 
     }
