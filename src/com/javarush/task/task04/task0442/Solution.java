@@ -13,19 +13,14 @@ public class Solution {
         System.out.println("ВВодите числа:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int sum = 0;
-        while (true) {
-            int number = Integer.parseInt(reader.readLine());
-
+        int number;
+        while (!((number = Integer.parseInt(reader.readLine())) == -1)) {
             sum = sum + number;
-            if (number == -1) {
-                System.out.println(sum);
-                break;
-
-            }
         }
-
-
+        System.out.println(sum - number);
     }
+
+
 }
 
 
