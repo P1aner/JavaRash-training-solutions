@@ -14,7 +14,7 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int sum = 0;
         int number = 0;
-        while (!(number == -1)) {
+        while (number != -1) {
             number = Integer.parseInt(reader.readLine());
             sum = sum + number;
         }
