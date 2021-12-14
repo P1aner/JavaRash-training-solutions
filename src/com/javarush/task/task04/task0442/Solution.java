@@ -13,11 +13,12 @@ public class Solution {
         System.out.println("ВВодите числа:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int sum = 0;
-        int number;
-        while (!((number = Integer.parseInt(reader.readLine())) == -1)) {
+        int number = 0;
+        while (!(number == -1)) {
+            number = Integer.parseInt(reader.readLine());
             sum = sum + number;
         }
-        System.out.println(sum - number);
+        System.out.println(sum);
     }
 
 
