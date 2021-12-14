@@ -12,11 +12,11 @@ public class Solution {
         //напишите тут ваш код
         System.out.println("ВВедите размерность прямоугольника:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int l = Integer.parseInt(reader.readLine());
-        int k = Integer.parseInt(reader.readLine());
+        int line = Integer.parseInt(reader.readLine());
+        int column = Integer.parseInt(reader.readLine());
 
-        for (int m = 0; m < l; m++) {
-            for (int n = 0; n < k; n++) {
+        for (int lineTo = 0; lineTo < line; lineTo++) {
+            for (int columnTo = 0; columnTo < column; columnTo++) {
                 System.out.print(8);
             }
             System.out.println();

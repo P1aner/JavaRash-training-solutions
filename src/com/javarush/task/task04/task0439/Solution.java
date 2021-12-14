@@ -13,8 +13,9 @@ public class Solution {
         System.out.println("ВВедите имя:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String name = reader.readLine();
-        for (int i = 0; i<10;i++){
-        System.out.println(name+" любит меня.");}
+        for (int i = 0; i < 10; i++) {
+            System.out.println(name + " любит меня.");
+        }
 
     }
 }
