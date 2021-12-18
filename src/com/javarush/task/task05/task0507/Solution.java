@@ -14,7 +14,7 @@ public class Solution {
         double total = 0;
         int sum = 0;
         int count = 0;
-        int i = Integer.parseInt(reader.readLine());
+        int i = 0;
         while (i != -1) {
             sum = sum + i;
             count++;
