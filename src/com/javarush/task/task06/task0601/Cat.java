@@ -8,7 +8,7 @@ public class Cat {
     //напишите тут ваш код
     @Override
     protected void finalize() throws Throwable {
-       //super.finalize();- не понимаю почему есть эта строка в правильном решении
+       super.finalize();
     }
 
     public static void main(String[] args) {

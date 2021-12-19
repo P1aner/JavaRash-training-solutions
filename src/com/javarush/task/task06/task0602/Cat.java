@@ -12,6 +12,7 @@ public class Cat {
     //напишите тут ваш код
 protected void finalize () throws Throwable {
     System.out.println("Объект \"Кошак\" уничтожен");
+    super.finalize();
 }
 
 }
@@ -20,6 +21,7 @@ class Dog {
     //напишите тут ваш код
     protected void finalize () throws Throwable {
         System.out.println("Объект \"Собакен\" уничтожен");
+        super.finalize();
     }
 }
 

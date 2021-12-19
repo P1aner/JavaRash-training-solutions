@@ -23,16 +23,16 @@ public class Solution {
 class Cat {
     @Override
     protected void finalize() throws Throwable {
-        super.finalize();
         System.out.println("A Cat was destroyed");
+        super.finalize();
     }
 }
 
 class Dog {
     @Override
     protected void finalize() throws Throwable {
-        super.finalize();
         System.out.println("A Dog was destroyed");
+        super.finalize();
     }
 }
 

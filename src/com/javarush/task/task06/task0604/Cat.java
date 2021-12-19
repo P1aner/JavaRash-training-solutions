@@ -21,6 +21,7 @@ public class Cat {
 
     protected void finalize() throws Throwable {
         catCount--;
+        super.finalize();
     }
 }
 
