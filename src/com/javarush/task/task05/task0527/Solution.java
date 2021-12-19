@@ -8,7 +8,7 @@ public class Solution {
     public static void main(String[] args) {
         Mouse jerryMouse = new Mouse("Jerry", 12, 5);
         Cat tomCat = new Cat("Tom", 24, 10);
-        Dog tjDog = new Dog("Собака", 48, 15);
+        Dog baksterDog = new Dog("Бакстер", 48, 15);
 
         //напишите тут ваш код
     }

@@ -10,6 +10,7 @@ public class Solution {
         String name;
         int age;
         String address;
+
         public String toString() {
             return this.name + " " + this.age + " " + this.address;
         }
@@ -91,6 +92,7 @@ public class Solution {
         Woman woman1 = new Woman("Женское имя1", 28, "Минск");
         Woman woman2 = new Woman("Женское имя2", 28, "Минск");
 
+       /*
         System.out.println(planer.name + " " + planer.age + " " + planer.address);
         System.out.println(catrun404.name + " " + catrun404.age + " " + catrun404.address);
         System.out.println(woman1.name + " " + woman1.age + " " + woman1.address);
@@ -100,11 +102,12 @@ public class Solution {
         System.out.println(catrun404.toString());
         System.out.println(woman1.toString());
         System.out.println(woman2.toString());
-
+*/
         System.out.println(planer);
         System.out.println(catrun404);
         System.out.println(woman1);
         System.out.println(woman2);
+
     }
 
     //напишите тут ваш код

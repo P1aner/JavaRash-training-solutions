@@ -12,17 +12,31 @@ public class Solution {
         //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int sum = 0;
+        String number = "0";
 
-        while (true) {
-            String s = reader.readLine();
-            if (s.equals("сумма")) {
-                break;
-            }
-            sum = sum + Integer.parseInt(s);
+        while (!number.equals("сумма")) {
+            sum = sum + Integer.parseInt(number);
+            number = reader.readLine();
         }
         System.out.println(sum);
     }
 }
+
+/*
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    int sum = 0;
+
+        while (true) {
+                String s = reader.readLine();
+                if (s.equals("сумма")) {
+                break;
+                }
+                sum = sum + Integer.parseInt(s);
+                }
+                System.out.println(sum);
+                }
+                }
+*/
 
 
 /*
