@@ -19,26 +19,26 @@ public class Solution {
     }
 
     public static class Body {
-        private static final String underweight = "Недовес: меньше чем 18.5";
-        private static final String normal = "Нормальный: между 18.5 и 25";
-        private static final String excess = "Избыточный вес: между 25 и 30";
-        private static final String obesity = "Ожирение: 30 или больше";
+        private static final String UNDERWEIGHT = "Недовес: меньше чем 18.5";
+        private static final String NORMAL = "Нормальный: между 18.5 и 25";
+        private static final String EXCEXX = "Избыточный вес: между 25 и 30";
+        private static final String OBESITY = "Ожирение: 30 или больше";
 
         public static void calculateMassIndex(double weight, double height) {
             // напишите тут ваш код
             String text = null;
             double index = weight / (height * height);
             if (index < 18.5) {
-                text = underweight;
+                text = UNDERWEIGHT;
             }
             if (18.5 <= index && index < 25) {
-                text = normal;
+                text = NORMAL;
             }
             if (25 <= index && index < 30) {
-                text = excess;
+                text = EXCEXX;
             }
             if (30 <= index) {
-                text = obesity;
+                text = OBESITY;
             }
             System.out.println(text);
         }
