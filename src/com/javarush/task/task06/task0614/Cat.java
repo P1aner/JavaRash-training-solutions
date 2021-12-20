@@ -23,7 +23,7 @@ public class Cat {
 
     public static void printCats() {
         //напишите тут ваш код
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < cats.size(); i++) {
             System.out.println(cats.get(i));
         }
 

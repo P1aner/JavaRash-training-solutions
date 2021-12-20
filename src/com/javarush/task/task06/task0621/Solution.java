@@ -63,19 +63,18 @@ public class Solution {
             } else {
                 if (mother == null) {
                     return "The cat's name is " + name + ", no mother, father is " + father.name;
-
+                }
+                if (father == null) {
+                    return "The cat's name is " + name + ", mother is " + mother.name + ", no father";
                 } else {
-                    if (father == null) {
-                        return "The cat's name is " + name + ", mother is " + mother.name + ", no father";
-                    } else {
-                        return "The cat's name is " + name + ", mother is " + mother.name + ", father is " + father.name;
-                    }
+                    return "The cat's name is " + name + ", mother is " + mother.name + ", father is " + father.name;
                 }
             }
-
         }
+
     }
 }
+
 
 /*
 Задача: У каждой кошки есть имя и кошка-мама.
