@@ -60,16 +60,16 @@ public class Solution {
         public String toString() {
             if (mother == null && father == null) {
                 return "The cat's name is " + name + ", no mother, no father ";
-            } else {
-                if (mother == null) {
-                    return "The cat's name is " + name + ", no mother, father is " + father.name;
-                }
-                if (father == null) {
-                    return "The cat's name is " + name + ", mother is " + mother.name + ", no father";
-                } else {
-                    return "The cat's name is " + name + ", mother is " + mother.name + ", father is " + father.name;
-                }
             }
+            if (mother == null) {
+                return "The cat's name is " + name + ", no mother, father is " + father.name;
+            }
+            if (father == null) {
+                return "The cat's name is " + name + ", mother is " + mother.name + ", no father";
+            } else {
+                return "The cat's name is " + name + ", mother is " + mother.name + ", father is " + father.name;
+            }
+
         }
 
     }
