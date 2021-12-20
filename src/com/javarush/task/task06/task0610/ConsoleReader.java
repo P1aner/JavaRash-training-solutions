@@ -8,38 +8,27 @@ import java.io.InputStreamReader;
 */
 
 public class ConsoleReader {
+    public static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
     public static String readString() throws Exception {
         //напишите тут ваш код
-        String s;
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        s = reader.readLine();
-        return s;
+        return reader.readLine();
     }
 
     public static int readInt() throws Exception {
         //напишите тут ваш код
-        String s;
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        s = reader.readLine();
-        return Integer.parseInt(s);
-
+        return Integer.parseInt(reader.readLine());
     }
 
     public static double readDouble() throws Exception {
         //напишите тут ваш код
-        String s;
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        s = reader.readLine();
-        return Double.parseDouble(s);
+        return Double.parseDouble(reader.readLine());
 
     }
 
     public static boolean readBoolean() throws Exception {
         //напишите тут ваш код
-        String s;
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        s = reader.readLine();
-        return Boolean.parseBoolean(s);
+        return Boolean.parseBoolean(reader.readLine());
     }
 
     public static void main(String[] args) throws Exception {

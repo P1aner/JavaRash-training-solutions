@@ -22,21 +22,24 @@ public class Solution {
         public static void calculateMassIndex(double weight, double height) {
             // напишите тут ваш код
             String text = null;
+            String underweight = "Недовес: меньше чем 18.5";
+            String normal = "Нормальный: между 18.5 и 25";
+            String excess = "Избыточный вес: между 25 и 30";
+            String obesity = "Ожирение: 30 или больше";
             double index = weight / (height * height);
             if (index < 18.5) {
-                text = "Недовес: меньше чем 18.5";
+                text = underweight;
             }
             if (18.5 <= index && index < 25) {
-                text = "Нормальный: между 18.5 и 25";
+                text = normal;
             }
             if (25 <= index && index < 30) {
-                text = "Избыточный вес: между 25 и 30";
+                text = excess;
             }
             if (30 <= index) {
-                text = "Ожирение: 30 или больше";
+                text = obesity;
             }
             System.out.println(text);
-            System.out.println(index);
         }
     }
 }
