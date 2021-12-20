@@ -19,13 +19,14 @@ public class Solution {
     }
 
     public static class Body {
+        private static final String underweight = "Недовес: меньше чем 18.5";
+        private static final String normal = "Нормальный: между 18.5 и 25";
+        private static final String excess = "Избыточный вес: между 25 и 30";
+        private static final String obesity = "Ожирение: 30 или больше";
+
         public static void calculateMassIndex(double weight, double height) {
             // напишите тут ваш код
             String text = null;
-            String underweight = "Недовес: меньше чем 18.5";
-            String normal = "Нормальный: между 18.5 и 25";
-            String excess = "Избыточный вес: между 25 и 30";
-            String obesity = "Ожирение: 30 или больше";
             double index = weight / (height * height);
             if (index < 18.5) {
                 text = underweight;
