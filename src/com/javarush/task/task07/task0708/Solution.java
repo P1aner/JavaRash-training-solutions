@@ -9,7 +9,7 @@ import java.util.ArrayList;
 */
 
 public class Solution {
-    private static ArrayList<String> strings = new ArrayList<String>();
+    private static ArrayList<String> strings = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
@@ -17,13 +17,15 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         for (int i = 0; i < 5; i++) {
             strings.add(reader.readLine());
-            if (strings.get(i).length() > max) {
-                max = strings.get(i).length();
+        }
+        for (String string : strings) {
+            if (string.length() > max) {
+                max = string.length();
             }
         }
-        for (int i = 0; i < strings.size(); i++)
-            if (strings.get(i).length() == max) {
-                System.out.println(strings.get(i));
+        for (String string : strings)
+            if (string.length() == max) {
+                System.out.println(string);
             }
     }
 }

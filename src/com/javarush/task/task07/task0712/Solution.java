@@ -17,24 +17,27 @@ public class Solution {
         //напишите тут ваш код
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<String> strings = new ArrayList<String>();
+        ArrayList<String> strings = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             strings.add(reader.readLine());
-            if (min > strings.get(i).length()) {
-                min = strings.get(i).length();
+        }
+        for (String string : strings) {
+            if (min > string.length()) {
+                min = string.length();
             }
-            if (max < strings.get(i).length()) {
-                max = strings.get(i).length();
+            if (max < string.length()) {
+                max = string.length();
             }
         }
         System.out.println(firstMinOrMax(strings));
+
     }
 
     public static String firstMinOrMax(ArrayList<String> strings) {
 
-        for (int i = 0; i < strings.size(); i++) {
-            if (strings.get(i).length() == max || strings.get(i).length() == min) {
-                return strings.get(i);
+        for (String string : strings) {
+            if (string.length() == max || string.length() == min) {
+                return string;
             }
         }
         return null;
