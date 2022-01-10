@@ -11,22 +11,23 @@ public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
         int score = 20;
-        int[] smal1 = new int[score / 2];
-        int[] smal2 = new int[score / 2];
+        int[] small1 = new int[score / 2];
+        int[] small2 = new int[score / 2];
         int[] big = new int[score];
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        for (int i = 0; i < smal1.length; i++) {
+        for (int i = 0; i < big.length; i++) {
             int number = Integer.parseInt(reader.readLine());
-            smal1[i] = number;
             big[i] = number;
         }
-        for (int i = 0; i < smal2.length; i++) {
-            int number = Integer.parseInt(reader.readLine());
-            smal2[i] = number;
-            big[i + smal1.length] = number;
+        for (int i = 0; i < big.length; i++) {
+            if (i < (big.length) / 2) {
+                small1[i] = big[i];
+            } else {
+                small2[i - small1.length] = big[i];
+            }
         }
-        for (int i = 0; i < smal2.length; i++) {
-            System.out.println(smal2[i]);
+        for (int numb : small2) {
+            System.out.println(numb);
         }
     }
 }

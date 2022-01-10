@@ -12,7 +12,7 @@ public class Solution {
     private static int even = 0;
     private static int odd = 0;
 
-    private static String text = null;
+
 
     public static void main(String[] args) throws IOException {
         //напишите тут ваш код
@@ -22,23 +22,24 @@ public class Solution {
         for (int i = 0; i < street.length; i++) {
             street[i] = Integer.parseInt(reader.readLine());
         }
-        mmm(street);
+        sumEvenAndOddHause(street);
         print();
 
 
     }
 
-    public static void mmm(int[] argss) {
+    public static void sumEvenAndOddHause(int[] argss) {
         for (int i = 0; i < argss.length; i = i + 2) {
-            even = even + argss[i];
+            even += argss[i];
         }
         for (int i = 1; i < argss.length; i = i + 2) {
-            odd = odd + argss[i];
+            odd += argss[i];
         }
 
     }
 
     public static void print() {
+        String text;
         if (even > odd) {
             text = "четными";
         } else {
