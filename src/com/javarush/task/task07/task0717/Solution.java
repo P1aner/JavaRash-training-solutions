@@ -26,7 +26,7 @@ public class Solution {
 
     public static ArrayList<String> doubleValues(ArrayList<String> list) {
         //напишите тут ваш код
-        for (int i = 1; i < list.size(); i += 2) {
+        for (int i = 0; i < list.size(); i += 2) {
             list.add(i, list.get(i));
         }
         return list;
