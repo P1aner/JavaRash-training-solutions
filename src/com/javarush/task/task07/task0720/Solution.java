@@ -13,7 +13,7 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         //напишите тут ваш код
-        ArrayList<String> strings = new ArrayList<String>();
+        ArrayList<String> strings = new ArrayList<>();
         int n = Integer.parseInt(reader.readLine());
         int m = Integer.parseInt(reader.readLine());
         for (int i = 0; i < n; i++) {
@@ -25,8 +25,8 @@ public class Solution {
             strings.add(s);
 
         }
-        for (int i = 0; i < strings.size(); i++) {
-            System.out.println(strings.get(i));
+        for (String string : strings) {
+            System.out.println(string);
         }
     }
 }

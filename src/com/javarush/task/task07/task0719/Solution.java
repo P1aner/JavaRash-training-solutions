@@ -15,10 +15,10 @@ public class Solution {
 
         //напишите тут ваш код
         ArrayList<Integer> numbers = new ArrayList<Integer>();
-        for (int i =0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             numbers.add(Integer.parseInt(reader.readLine()));
         }
-        for(int i = numbers.size()-1;i>=0; i--){
+        for (int i = numbers.size() - 1; i >= 0; i--) {
             System.out.println(numbers.get(i));
         }
     }

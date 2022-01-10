@@ -42,19 +42,11 @@ public class Solution {
             this.father = father;
             this.mother = mother;
         }
-        public Human(){
-
-        }
         public Human (String name, boolean sex, int age){
             this.name = name;
             this.sex = sex;
             this.age = age;
         }
-
-
-
-
-
         public String toString() {
             String text = "";
             text += "Имя: " + this.name;

@@ -13,18 +13,17 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        int maximum = Integer.MIN_VALUE;
-        int minimum = Integer.MAX_VALUE;
-
         //напишите тут ваш код
         int[] numbers;
-        numbers = getInst();
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] > maximum) {
-                maximum = numbers[i];
+        numbers = getInt();
+        int maximum = numbers[0];
+        int minimum = numbers[0];
+        for (int number : numbers) {
+            if (number > maximum) {
+                maximum = number;
             }
-            if (numbers[i] < minimum) {
-                minimum = numbers[i];
+            if (number < minimum) {
+                minimum = number;
             }
         }
         System.out.print(maximum + " " + minimum);
@@ -33,7 +32,7 @@ public class Solution {
     //напишите тут ваш код
 
 
-    public static int[] getInst() throws IOException {
+    public static int[] getInt() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int[] numbers = new int[20];
         for (int i = 0; i < numbers.length; i++) {
