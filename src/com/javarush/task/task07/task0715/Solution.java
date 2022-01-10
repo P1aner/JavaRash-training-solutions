@@ -9,15 +9,16 @@ import java.util.ArrayList;
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
-        ArrayList<String> array = new ArrayList<String>();
+        ArrayList<String> array = new ArrayList<>();
         array.add("мама");
         array.add("мыла");
         array.add("раму");
-        for (int i = 1; i < 4; i += 2) {
-            array.add(i, "именно");
+        String imenno = "именно";
+        for (int i = 1; i < array.size(); i += 2) {
+            array.add(i, imenno);
         }
-        for (int i = 0; i < array.size(); i++) {
-            System.out.println(array.get(i));
+        for (String s : array) {
+            System.out.println(s);
         }
     }
 }

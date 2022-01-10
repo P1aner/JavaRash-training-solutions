@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Solution {
     public static void main(String[] args) {
-        ArrayList<String> strings = new ArrayList<String>();
+        ArrayList<String> strings = new ArrayList<>();
         strings.add("роза");
         strings.add("лоза");
         strings.add("лира");
@@ -21,15 +21,15 @@ public class Solution {
 
     public static ArrayList<String> fix(ArrayList<String> strings) {
         //напишите тут ваш код
-        ArrayList<String> newString = new ArrayList<String>();
+        ArrayList<String> newString = new ArrayList<>();
 
-        for (int i = 0; i < strings.size(); i++) {
-            if ((strings.get(i).indexOf("л") == -1 && strings.get(i).indexOf("р") == -1) || (strings.get(i).indexOf("л") != -1 && strings.get(i).indexOf("р") != -1)) {
-                newString.add(strings.get(i));
+        for (String string : strings) {
+            if ((!string.contains("л") && !string.contains("р")) || (string.contains("л") && string.contains("р"))) {
+                newString.add(string);
             } else {
-                if (strings.get(i).indexOf("л") != -1) {
-                    newString.add(strings.get(i));
-                    newString.add(strings.get(i));
+                if (string.contains("л")) {
+                    newString.add(string);
+                    newString.add(string);
                 }
 
 

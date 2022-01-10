@@ -11,15 +11,19 @@ import java.util.ArrayList;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        ArrayList<Integer> sharesThree = new ArrayList<Integer>();
-        ArrayList<Integer> sharesTwo = new ArrayList<Integer>();
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        ArrayList<Integer> numbOriginal = new ArrayList<>();
+        ArrayList<Integer> sharesThree = new ArrayList<>();
+        ArrayList<Integer> sharesTwo = new ArrayList<>();
+        ArrayList<Integer> numbers = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         for (int i = 0; i < 20; i++) {
             int number = Integer.parseInt(reader.readLine());
-            if (number % 3 != 0 && number % 2 != 0) numbers.add(number);
-            if (number % 3 == 0) sharesThree.add(number);
-            if (number % 2 == 0) sharesTwo.add(number);
+            numbOriginal.add(number);
+        }
+        for (Integer numb : numbOriginal) {
+            if (numb % 3 != 0 && numb % 2 != 0) numbers.add(numb);
+            if (numb % 3 == 0) sharesThree.add(numb);
+            if (numb % 2 == 0) sharesTwo.add(numb);
         }
         printList(sharesThree);
         printList(sharesTwo);
@@ -28,8 +32,8 @@ public class Solution {
 
     public static void printList(ArrayList<Integer> list) {
         //напишите тут ваш код
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+        for (Integer integer : list) {
+            System.out.println(integer);
         }
     }
 }

@@ -12,26 +12,24 @@ public class Solution {
     public static void main(String[] args) throws Exception {
         // Считать строки с консоли и объявить ArrayList list тут
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             list.add(reader.readLine());
 
         }
         ArrayList<String> result = doubleValues(list);
         // Вывести на экран result
-        for (int i = 0; i < result.size(); i++) {
-            System.out.println(result.get(i));
+        for (String s : result) {
+            System.out.println(s);
         }
     }
 
     public static ArrayList<String> doubleValues(ArrayList<String> list) {
         //напишите тут ваш код
-        ArrayList<String> newList = new ArrayList<String>();
-        for (int i = 0; i < list.size(); i++) {
-            newList.add(list.get(i));
-            newList.add(list.get(i));
+        for (int i = 1; i < list.size(); i += 2) {
+            list.add(i, list.get(i));
         }
-        return newList;
+        return list;
     }
 }
 

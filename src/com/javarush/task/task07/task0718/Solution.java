@@ -13,7 +13,7 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<String> strings = new ArrayList<String>();
+        ArrayList<String> strings = new ArrayList<>();
         int count = 0;
         for (int i = 0; i < 10; i++) {
             strings.add(reader.readLine());
@@ -22,7 +22,8 @@ public class Solution {
             if (strings.get(i).length() > count) {
                 count = strings.get(i).length();
             } else {
-                System.out.println(i);break;
+                System.out.println(i);
+                break;
             }
 
         }
