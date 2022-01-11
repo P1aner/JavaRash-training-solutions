@@ -16,22 +16,22 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        HashMap<String, String> list = new HashMap<>();
+        Map<String, String> map = new HashMap<>();
         while (true) {
             String street = reader.readLine();
             if (street.isEmpty()) {
                 break;
             }
             String family = reader.readLine();
-            list.put(street, family);
+            map.put(street, family);
         }
 
         // Read the house number
         String street = reader.readLine();
 
-        for (String city : list.keySet()) {
+        for (String city : map.keySet()) {
             if (city.equalsIgnoreCase(street))
-                System.out.println(list.get(city));
+                System.out.println(map.get(city));
         }
     }
 }

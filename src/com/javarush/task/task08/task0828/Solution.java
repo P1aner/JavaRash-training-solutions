@@ -10,7 +10,7 @@ import java.util.*;
 */
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         //напишите тут ваш код
         HashMap<String, Integer> month = new HashMap<>();
         month.put("Январь", 1);
@@ -26,10 +26,15 @@ public class Solution {
         month.put("Ноябрь", 11);
         month.put("Декабрь", 12);
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String nameOfMonth = reader.readLine();
-        for (String monthArr: month.keySet()){
-            if (monthArr.equalsIgnoreCase(nameOfMonth)){
-                System.out.println(monthArr+" это "+ month.get(monthArr)+" месяц.");
+        String nameOfMonth = null;
+        try {
+            nameOfMonth = reader.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        for (String monthArr : month.keySet()) {
+            if (monthArr.equalsIgnoreCase(nameOfMonth)) {
+                System.out.println(monthArr + " это " + month.get(monthArr) + " месяц.");
             }
         }
 

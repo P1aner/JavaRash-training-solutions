@@ -14,19 +14,20 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String string = reader.readLine();
         String finalize = "";
-        finalize = finalize+ string.substring(0, 1).toUpperCase();
+        finalize = finalize + string.substring(0, 1).toUpperCase();
         for (int i = 1; i < string.length(); i++) {
             if (" ".equals(string.substring(i - 1, i))) {
-                finalize = finalize+string.substring(i, i+1).toUpperCase();
+                finalize = finalize + string.substring(i, i + 1).toUpperCase();
             } else {
-                finalize =finalize+ string.substring(i, i+1);
+                finalize = finalize + string.substring(i, i + 1);
 
             }
 
 
             //напишите тут ваш код
 
-        }System.out.println(finalize);
+        }
+        System.out.println(finalize);
     }
 }
 /*

@@ -1,6 +1,7 @@
 package com.javarush.task.task08.task0819;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /*
@@ -12,10 +13,13 @@ public class Solution {
         Set<Cat> cats = createCats();
 
         //напишите тут ваш код. step 3 - пункт 3
-        for (Cat cat : cats) {
+
+        /*for (Cat cat : cats) {
             cats.remove(cat);
             break;
-        }
+        }*/
+
+        cats.remove(cats.iterator().next());
 
 
         printCats(cats);
@@ -23,7 +27,7 @@ public class Solution {
 
     public static Set<Cat> createCats() {
         //напишите тут ваш код. step 2 - пункт 2
-        HashSet<Cat> cats = new HashSet<Cat>();
+        HashSet<Cat> cats = new HashSet<>();
         cats.add(new Cat("Cat1"));
         cats.add(new Cat("Cat2"));
         cats.add(new Cat("Cat3"));
@@ -58,7 +62,12 @@ public class Solution {
 4. Реализовать метод printCats, он должен вывести на экран всех котов, которые остались во множестве.
 Каждый кот с новой строки.
  */
+/*
+com.javarush.task.task08.task0819.Solution$Cat@7c30a502
+com.javarush.task.task08.task0819.Solution$Cat@2133c8f8
 
+Process finished with exit code 0
+ */
 
 
 

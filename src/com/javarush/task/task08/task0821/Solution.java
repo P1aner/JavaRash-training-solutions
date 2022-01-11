@@ -15,17 +15,17 @@ public class Solution {
 
     public static Map<String, String> createPeopleMap() {
         //напишите тут ваш код
-        Map<String,String> people = new HashMap<>();
-        people.put("Иванов1","Иван1");
-        people.put("Иванов2","Иван2");
-        people.put("Иванов3","Иван3");
-        people.put("Иванов4","Иван4");
-        people.put("Иванов5","Иван5");
-        people.put("Иванов6","Иван4");
-        people.put("Иванов7","Иван3");
-        people.put("Иванов8","Иван2");
-        people.put("Иванов9","Иван1");
-        people.put("Иванов1","Иван1");
+        Map<String, String> people = new HashMap<>();
+        people.put("Иванов1", "Иван1");
+        people.put("Иванов2", "Иван2");
+        people.put("Иванов3", "Иван3");
+        people.put("Иванов4", "Иван4");
+        people.put("Иванов5", "Иван5");
+        people.put("Иванов6", "Иван4");
+        people.put("Иванов7", "Иван3");
+        people.put("Иванов8", "Иван2");
+        people.put("Иванов9", "Иван1");
+        people.put("Иванов1", "Иван1");
 
         return people;
     }
