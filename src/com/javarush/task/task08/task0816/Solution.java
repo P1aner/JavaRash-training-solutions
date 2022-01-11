@@ -30,7 +30,9 @@ public class Solution {
 
     public static void removeAllSummerPeople(Map<String, Date> map) {
         //напишите тут ваш код
-        Map<String, Date> mapa = new HashMap<>();
+        map.values().removeIf(date -> date.getMonth() == 5 || date.getMonth() == 6 || date.getMonth() == 7);
+
+        /*       Map<String, Date> mapa = new HashMap<>();
         Iterator iterator = map.entrySet().iterator();
         while (iterator.hasNext()) {
             Map.Entry entry = (Map.Entry) iterator.next();
@@ -45,7 +47,12 @@ public class Solution {
         while (iterator.hasNext()) {
             Map.Entry entry = (Map.Entry) iterator.next();
             System.out.println(entry.getValue());
+        }*/
+        for (String name : map.keySet()) {
+            System.out.println(map.get(name));
         }
+
+
     }
 
     public static void main(String[] args) throws ParseException {

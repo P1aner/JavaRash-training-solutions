@@ -11,8 +11,8 @@ public class Solution {
     public static Set<String> createSet() {
         //напишите тут ваш код
         Set<String> stringList = new HashSet<String>();
-        for (int i = 0;i<20;i++){
-        stringList.add("Лопата "+i);
+        for (int i = 0; i < 20; i++) {
+            stringList.add("Лопата " + i);
         }
         return stringList;
 

@@ -26,12 +26,13 @@ public class Solution {
 
     public static Map<String, Integer> removeItemFromMap(Map<String, Integer> map) {
         //напишите тут ваш код
-        HashMap<String, Integer> clone = new HashMap<>(map);
+        map.values().removeIf(num -> num < 500);
+        /* HashMap<String, Integer> clone = new HashMap<>(map);
         for (Map.Entry<String, Integer> iter : clone.entrySet()) {
             if (iter.getValue() < 500) {
                 map.remove(iter.getKey());
             }
-        }
+        }*/
         return map;
 
     }
