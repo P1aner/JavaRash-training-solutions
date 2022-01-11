@@ -7,44 +7,32 @@ package com.javarush.task.task09.task0903;
 public class Solution {
     public static void main(String[] args) {
         method1();
-        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        int metodLine1 = stackTraceElements[1].getLineNumber();
-        System.out.println(metodLine1);
+        System.out.println(Thread.currentThread().getStackTrace()[1].getLineNumber());
 
     }
 
     public static int method1() {
         method2();
-        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        int metodLine = stackTraceElements[2].getLineNumber();
-        return  /*напишите тут ваш код*/ metodLine;
+        return  /*напишите тут ваш код*/ Thread.currentThread().getStackTrace()[2].getLineNumber();
     }
 
     public static int method2() {
         method3();
-        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        int metodLine = stackTraceElements[2].getLineNumber();
-        return  /*напишите тут ваш код*/ metodLine;
+        return  /*напишите тут ваш код*/ Thread.currentThread().getStackTrace()[2].getLineNumber();
     }
 
     public static int method3() {
         method4();
-        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        int metodLine = stackTraceElements[2].getLineNumber();
-        return  /*напишите тут ваш код*/ metodLine;
+        return  /*напишите тут ваш код*/ Thread.currentThread().getStackTrace()[2].getLineNumber();
     }
 
     public static int method4() {
         method5();
-        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        int metodLine = stackTraceElements[2].getLineNumber();
-        return  /*напишите тут ваш код*/ metodLine;
+        return  /*напишите тут ваш код*/ Thread.currentThread().getStackTrace()[2].getLineNumber();
     }
 
     public static int method5() {
-        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        int metodLine = stackTraceElements[2].getLineNumber();
-        return  /*напишите тут ваш код*/ metodLine;
+        return  /*напишите тут ваш код*/ Thread.currentThread().getStackTrace()[2].getLineNumber();
     }
 }
 

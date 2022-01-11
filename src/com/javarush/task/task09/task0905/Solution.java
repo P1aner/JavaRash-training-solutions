@@ -12,8 +12,7 @@ public class Solution {
 
     public static int getStackTraceDepth() {
         //напишите тут ваш код
-        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        return stackTraceElements.length;
+        return Thread.currentThread().getStackTrace().length;
     }
 }
 

@@ -16,39 +16,34 @@ public class Solution {
         method2();
         //напишите тут ваш код
         StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        String metodName = stackTraceElements[2].getMethodName();
-        return metodName;
+        return stackTraceElements[2].getMethodName();
     }
 
     public static String method2() {
         method3();
         //напишите тут ваш код
         StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        String metodName = stackTraceElements[2].getMethodName();
-        return metodName;
+        return stackTraceElements[2].getMethodName();
     }
 
     public static String method3() {
         method4();
         //напишите тут ваш код
         StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        String metodName = stackTraceElements[2].getMethodName();
-        return metodName;
+        return stackTraceElements[2].getMethodName();
     }
 
     public static String method4() {
         method5();
         //напишите тут ваш код
         StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        String metodName = stackTraceElements[2].getMethodName();
-        return metodName;
+        return stackTraceElements[2].getMethodName();
     }
 
     public static String method5() {
         //напишите тут ваш код
         StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        String metodName = stackTraceElements[2].getMethodName();
-        return metodName;
+        return stackTraceElements[2].getMethodName();
     }
 }
 
