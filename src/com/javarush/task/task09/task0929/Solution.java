@@ -15,7 +15,7 @@ public class Solution {
         InputStream fileInputStream = null;
         try {
             fileInputStream = getInputStream(sourceFileName);
-        } catch (Exception e) {
+        } catch (FileNotFoundException e) {
             System.out.println("Файл не существует");
             sourceFileName = reader.readLine();
             fileInputStream = getInputStream(sourceFileName);

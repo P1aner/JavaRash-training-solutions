@@ -35,36 +35,24 @@ public class Solution {
             for (int i = 0; i < array.length - 1; i++) {
                 if (isNumber(array[i])) {
                     for (int j = i + 1; j < array.length; j++) {
-                        if (isNumber(array[j])) {
-                            if (Integer.parseInt(array[i]) < Integer.parseInt(array[j])) {
-                                isSorted = false;
-                                buf = array[i];
-                                array[i] = array[j];
-                                array[j] = buf;
-                            }
+                        if (isNumber(array[j]) && Integer.parseInt(array[i]) < Integer.parseInt(array[j])) {
+                            isSorted = false;
+                            buf = array[i];
+                            array[i] = array[j];
+                            array[j] = buf;
                         }
                     }
-
-                }
-            }
-        }
-        isSorted = false;
-        while (!isSorted) {
-            isSorted = true;
-            for (int i = 0; i < array.length - 1; i++) {
-                if (!isNumber(array[i])) {
+                } else {
                     for (int j = i + 1; j < array.length; j++) {
-                        if (!isNumber(array[j])) {
-                            if (isGreaterThan(array[i], array[j])) {
-                                isSorted = false;
-                                buf = array[i];
-                                array[i] = array[j];
-                                array[j] = buf;
-                            }
+                        if (!isNumber(array[j]) && isGreaterThan(array[i], array[j])) {
+                            isSorted = false;
+                            buf = array[i];
+                            array[i] = array[j];
+                            array[j] = buf;
                         }
+
                     }
                 }
-
             }
         }
     }

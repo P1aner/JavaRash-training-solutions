@@ -14,8 +14,8 @@ public class Solution {
         //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String text = null;
-        String str1 = "";
-        String str2 = "";
+        String vowels = "";
+        String consonants = "";
         try {
             text = reader.readLine();
         } catch (Exception e) {
@@ -24,13 +24,13 @@ public class Solution {
         char[] textArray = text.toCharArray();
         for (char symbol : textArray) {
             if (isVowel(symbol)) {
-                str1 = str1 + symbol + " ";
+                vowels += symbol + " ";
             } else if(symbol != ' ') {
-                str2 = str2 + symbol + " ";
+                consonants += symbol + " ";
             }
         }
-        System.out.println(str1);
-        System.out.println(str2);
+        System.out.println(vowels);
+        System.out.println(consonants);
     }
 
     // метод проверяет, гласная ли буква
