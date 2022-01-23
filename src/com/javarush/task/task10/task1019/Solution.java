@@ -24,8 +24,8 @@ public class Solution {
             name = reader.readLine();
         }
         map.put(name, id);
-        for (String key : map.keySet()) {
-            System.out.println("Id=" + map.get(key) + " Name=" + key);
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println("Id=" + entry.getValue() + " Name=" + entry.getKey());
         }
 
     }

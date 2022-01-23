@@ -9,8 +9,9 @@ public class Solution {
         String text = "Я не хочу изучать Java, я хочу большую зарплату";
         StringBuilder sText = new StringBuilder(text);
         for (int i = 0; i < 40; i++) {
-            System.out.println(sText);
-            sText.deleteCharAt(0);
+          /*  System.out.println(sText);
+            sText.deleteCharAt(0);*/
+            System.out.println(text.substring(i));
         }
 
 

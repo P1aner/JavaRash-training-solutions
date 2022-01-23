@@ -27,7 +27,7 @@ public class Solution {
         //напишите тут ваш код
         try {
             return list.get(index);
-        } catch (Exception e) {
+        } catch (IndexOutOfBoundsException e) {
             return defaultValue;
         }
     }
