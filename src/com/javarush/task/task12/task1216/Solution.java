@@ -10,7 +10,7 @@ public class Solution {
     }
 
     //add an interface here - добавь интерфейс тут
-    interface /*I*/CanFly {
+    public interface /*I*/CanFly {
         void fly();
         void fall();
 
