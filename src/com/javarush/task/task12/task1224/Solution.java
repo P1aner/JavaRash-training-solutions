@@ -5,11 +5,12 @@ package com.javarush.task.task12.task1224;
 */
 
 public class Solution {
-    public static final String cat = "Кот";
-    public static final String tiger = "Тигр";
-    public static final String lion = "Лев";
-    public static final String bull = "Бык";
-    public static final String pig = "Свинья";
+    public static final String CAT = "Кот";
+    public static final String TIGER = "Тигр";
+    public static final String LION = "Лев";
+    public static final String BULL = "Бык";
+    public static final String PIG = "Свинья";
+    public static final String ANIMAL = "Животное";
 
     public static void main(String[] args) {
         System.out.println(getObjectType(new Cat()));
@@ -22,21 +23,21 @@ public class Solution {
     public static String getObjectType(Object o) {
         //напишите тут ваш код
         if (o instanceof Cat) {
-            return cat;
+            return CAT;
         }
         if (o instanceof Tiger) {
-            return tiger;
+            return TIGER;
         }
         if (o instanceof Lion) {
-            return lion;
+            return LION;
         }
         if (o instanceof Bull) {
-            return bull;
+            return BULL;
         }
         if (o instanceof Pig) {
-            return pig;
+            return PIG;
         }
-        return "Животное";
+        return ANIMAL;
     }
 
     public static class Cat {
