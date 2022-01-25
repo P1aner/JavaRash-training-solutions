@@ -47,9 +47,9 @@ public class Solution {
 
 /*
 java.lang.NullPointerException
-com.javarush.task.task09.task0917.Solution.method1(Solution.java:30)
-com.javarush.task.task09.task0917.Solution.handleExceptions(Solution.java:14)
-com.javarush.task.task09.task0917.Solution.main(Solution.java:9)
+com.javarush.task.task09.task0917.Solution.method1(Person.java:30)
+com.javarush.task.task09.task0917.Solution.handleExceptions(Person.java:14)
+com.javarush.task.task09.task0917.Solution.main(Person.java:9)
 
 Process finished with exit code 0
  */
