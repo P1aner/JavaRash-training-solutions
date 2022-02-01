@@ -14,9 +14,19 @@ public class Solution {
         String key = null;
 
         //тут цикл по чтению ключей, пункт 1
-        while (true){
-            key= reader.readLine();
-
+        while (true) {
+            key = reader.readLine();
+            if (key.equals("user")) {
+                doWork(new Person.User());
+            } else if (key.equals("loser")) {
+                doWork(new Person.Loser());
+            } else if (key.equals("coder")) {
+                doWork(new Person.Coder());
+            } else if (key.equals("proger")) {
+                doWork(new Person.Proger());
+            } else {
+                break;
+            }
 
         }
         {
@@ -29,6 +39,19 @@ public class Solution {
 
     public static void doWork(Person person) {
         // пункт 3
+        if (person instanceof Person.User) {
+            ((Person.User) person).live();
+        }
+        if (person instanceof Person.Loser) {
+            ((Person.Loser) person).doNothing();
+        }
+        if (person instanceof Person.Coder) {
+            ((Person.Coder) person).writeCode();
+        }
+        if (person instanceof Person.Proger) {
+            ((Person.Proger) person).enjoy();
+        }
+
     }
 }
 /*
@@ -45,4 +68,17 @@ public class Solution {
 Вызывает метод doNothing(), если person имеет тип Loser.
 Вызывает метод writeCode(), если person имеет тип Coder.
 Вызывает метод enjoy(), если person имеет тип Proger.
+ */
+/*
+user
+I usually just live.
+loser
+I usually do nothing.
+coder
+I usually write code.
+proger
+It's a wonderful life!
+i
+
+Process finished with exit code 0
  */
