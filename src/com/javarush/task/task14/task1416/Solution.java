@@ -53,7 +53,7 @@ public class Solution {
     static class Orca extends SeaCreature {
         @Override
         CanSwim getCurrentCreature() {
-            return new Orca();
+            return this;
         }
     }
 
@@ -61,7 +61,7 @@ public class Solution {
 
         @Override
         CanSwim getCurrentCreature() {
-            return new Whale();
+            return this;
         }
     }
 
@@ -87,7 +87,7 @@ public class Solution {
         }
 
         CanSwim getCurrentCreature() {
-            return new RiverOtter();
+            return this;
         }
     }
 }
