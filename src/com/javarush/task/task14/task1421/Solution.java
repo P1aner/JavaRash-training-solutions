@@ -19,7 +19,11 @@ Singleton
 public class Solution {
     public static void main(String[] args) {
     }
+    Singleton singleton = Singleton.getInstance();
 }
+/*
 
+Process finished with exit code 0
+ */
 
 
