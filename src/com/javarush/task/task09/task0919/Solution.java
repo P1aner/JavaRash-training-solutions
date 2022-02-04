@@ -26,8 +26,8 @@ public class Solution {
 
 /*
 java.lang.ArithmeticException: / by zero
-	at com.javarush.task.task09.task0919.Solution.divideByZero(Person.java:16)
-	at com.javarush.task.task09.task0919.Solution.main(Person.java:10)
+	at com.javarush.task.task09.task0919.Solution.divideByZero(Solution.java:18)
+	at com.javarush.task.task09.task0919.Solution.main(Solution.java:11)
 
 Process finished with exit code 0
  */
