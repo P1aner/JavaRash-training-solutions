@@ -19,8 +19,38 @@ import java.io.InputStreamReader;
  */
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         //напиште тут ваш код
+
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+            String value = reader.readLine();
+            while (!(value.equals("exit"))) {
+
+                try {
+                    Integer number = Integer.parseInt(value);
+                    if (number > 0 && number < 128) {
+                        print(Short.parseShort(String.valueOf(number)));
+                    } else {
+                        print(number);
+                    }
+                } catch (NumberFormatException e2) {
+                    try {
+                        Double number = Double.parseDouble(value);
+                        print(number);
+                    } catch (NumberFormatException e3) {
+                        print(value);
+                    }
+                }
+                value = reader.readLine();
+            }
+
+
+        } catch (
+                IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public static void print(Double value) {
@@ -39,4 +69,19 @@ public class Solution {
         System.out.println("Это тип Integer, значение " + value);
     }
 }
+/*
+123
+Это тип short, значение 123
+128
+Это тип Integer, значение 128
+132513543
+Это тип Integer, значение 132513543
+2436354562454432523
+Это тип Double, значение 2.4363545624544328E18
+234234234234234234234234234234234
+Это тип Double, значение 2.3423423423423423E32
+werwe
+Это тип String, значение werwe
 
+Process finished with exit code 130
+ */
