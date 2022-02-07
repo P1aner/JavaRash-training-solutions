@@ -3,6 +3,8 @@ package com.javarush.task.task15.task1527;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /*
 Парсер реквестов
@@ -41,8 +43,9 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String url = reader.readLine();
         //напишите тут ваш код
+        Map<String, String> map = new LinkedHashMap<>();
         StringBuilder newUrl = new StringBuilder(url);
-        for (int i = 0;;) {
+        for (; ; ) {
             if (newUrl.charAt(0) == '?') {
                 newUrl.deleteCharAt(0);
                 break;
@@ -50,7 +53,36 @@ public class Solution {
                 newUrl.deleteCharAt(0);
             }
         }
-        System.out.println(newUrl);
+        String text = String.valueOf(newUrl);
+        String[] es = text.split("&");
+        for (String test : es) {
+            String[] es1 = test.split("=");
+            if (es1.length > 1) {
+                map.put(es1[0], es1[1]);
+            } else {
+                map.put(es1[0], null);
+            }
+        }
+        String text1 = "";
+        for (String te : map.keySet()) {
+            text1 += te + " ";
+        }
+        StringBuilder builder = new StringBuilder(text1);
+        builder.deleteCharAt(text1.length() - 1);
+        System.out.println(builder);
+
+
+        for (String test : map.keySet()) {
+            if (test.equals("obj")) {
+                try {
+                    double number = Double.parseDouble(map.get(test));
+                    alert(number);
+                } catch (NumberFormatException e) {
+                    alert(map.get(test));
+                }
+            }
+        }
+
 
     }
 
@@ -62,5 +94,16 @@ public class Solution {
         System.out.println("String: " + value);
     }
 }
+/*
+http://javarush.ru/alpha/index.html?obj=3.14&name=Amigo
+obj name
+double: 3.14
 
+Process finished with exit code 0
+ */
+/*
+http://javarush.ru/alpha/index.html?lvl=15&view&name=Amigo
+lvl view name
 
+Process finished with exit code 0
+ */
