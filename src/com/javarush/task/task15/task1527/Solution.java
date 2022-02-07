@@ -19,18 +19,18 @@ import java.io.InputStreamReader;
  * alert(String value) - для строк.
  * Обрати внимание на то, что метод alert() необходимо вызывать после вывода списка всех параметров на экран.
  * Пример 1
- *
+ * <p>
  * Ввод:
  * http://javarush.ru/alpha/index.html?lvl=15&view&name=Amigo
- *
+ * <p>
  * Вывод:
  * lvl view name
- *
+ * <p>
  * Пример 2
- *
+ * <p>
  * Ввод:
  * http://javarush.ru/alpha/index.html?obj=3.14&name=Amigo
- *
+ * <p>
  * Вывод:
  * obj name
  * double: 3.14
@@ -41,6 +41,17 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String url = reader.readLine();
         //напишите тут ваш код
+        StringBuilder newUrl = new StringBuilder(url);
+        for (int i = 0;;) {
+            if (newUrl.charAt(0) == '?') {
+                newUrl.deleteCharAt(0);
+                break;
+            } else {
+                newUrl.deleteCharAt(0);
+            }
+        }
+        System.out.println(newUrl);
+
     }
 
     public static void alert(double value) {
