@@ -62,7 +62,6 @@ public class Solution {
     }
 }
 /*
-"C:\Program Files\Java\jdk-11.0.11\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.3\lib\idea_rt.jar=59966:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\pavel\IdeaProjects\Javarush2\out\production\Javarush2 com.javarush.task.task15.task1522.Solution
 sun
 
 Process finished with exit code 0
