@@ -17,16 +17,18 @@ public class Solution {
         new Thread(new CountUpRunnable(), "Увеличиваем").start();
     }
 
-    public static class CountUpRunnable implements Runnable{
+    public static class CountUpRunnable implements Runnable {
         //Add your code here - добавь код тут
         private int countIndexUp = 0;
-        public void run(){
+
+        public void run() {
             try {
                 while (true) {
+                    ++countIndexUp;
                     System.out.println(toString());
-                    countIndexUp += 1;
-                    if (countIndexUp == Solution.number) return;
                     Thread.sleep(500);
+                    if (countIndexUp == Solution.number) return;
+
                 }
             } catch (InterruptedException e) {
             }
@@ -59,3 +61,17 @@ public class Solution {
         }
     }
 }
+/*
+Увеличиваем: 1
+Уменьшаем: 5
+Уменьшаем: 4
+Увеличиваем: 2
+Увеличиваем: 3
+Уменьшаем: 3
+Увеличиваем: 4
+Уменьшаем: 2
+Уменьшаем: 1
+Увеличиваем: 5
+
+Process finished with exit code 0
+ */
