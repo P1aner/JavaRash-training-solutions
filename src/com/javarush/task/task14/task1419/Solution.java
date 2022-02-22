@@ -91,15 +91,15 @@ public class Solution {
 }
 /*
 java.lang.ArithmeticException: / by zero
+java.io.FileNotFoundException: noFile.ok (Не удается найти указанный файл)
+java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 0
+java.lang.NumberFormatException: For input string: "aga"
+java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 0
+java.lang.NullPointerException
 java.io.IOException
-java.io.FileNotFoundException
 java.net.SocketException
 java.lang.RuntimeException
-java.lang.IndexOutOfBoundsException
-java.lang.IllegalAccessException
-java.lang.NumberFormatException
 java.lang.Exception
-java.lang.ArrayIndexOutOfBoundsException
 
 Process finished with exit code 0
  */
