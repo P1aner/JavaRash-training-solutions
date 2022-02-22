@@ -19,7 +19,7 @@ public class Solution {
     }
 
     public static void printName(Human human) {
-
+        System.out.println(human.getClass());
     }
 
     public static class Human {
